@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="18" passed="17" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-30T11:47:34 EDT" name="Default suite" finished-at="2023-03-30T11:48:00 EDT" duration-ms="25131">
+    <groups>
+    </groups>
+    <test started-at="2023-03-30T11:47:34 EDT" name="Default test" finished-at="2023-03-30T11:48:00 EDT" duration-ms="25131">
+      <class name="Runner.TestRunner">
+        <test-method signature="Loginscenario()[pri:1, instance:Runner.TestRunner@188ac8a3]" started-at="2023-03-30T11:47:34 EDT" name="Loginscenario" finished-at="2023-03-30T11:47:35 EDT" duration-ms="538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Loginscenario -->
+        <test-method signature="LoginInvalidscenario()[pri:2, instance:Runner.TestRunner@188ac8a3]" started-at="2023-03-30T11:47:35 EDT" name="LoginInvalidscenario" finished-at="2023-03-30T11:47:35 EDT" duration-ms="370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginInvalidscenario -->
+        <test-method signature="Checkboxscenario()[pri:3, instance:Runner.TestRunner@188ac8a3]" started-at="2023-03-30T11:47:35 EDT" name="Checkboxscenario" finished-at="2023-03-30T11:47:36 EDT" duration-ms="460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Checkboxscenario -->
+        <test-method signature="ContextMenu()[pri:4, instance:Runner.TestRunner@188ac8a3]" started-at="2023-03-30T11:47:36 EDT" name="ContextMenu" finished-at="2023-03-30T11:47:36 EDT" duration-ms="329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ContextMenu -->
+        <test-method signature="DragandDrop()[pri:5, instance:Runner.TestRunner@188ac8a3]" started-at="2023-03-30T11:47:36 EDT" name="DragandDrop" finished-at="2023-03-30T11:47:36 EDT" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DragandDrop -->
+        <test-method signature="DropDown()[pri:6, instance:Runner.TestRunner@188ac8a3]" started-at="2023-03-30T11:47:36 EDT" name="DropDown" finished-at="2023-03-30T11:47:37 EDT" duration-ms="683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DropDown -->
+        <test-method signature="DynamicContent()[pri:7, instance:Runner.TestRunner@188ac8a3]" started-at="2023-03-30T11:47:37 EDT" name="DynamicContent" finished-at="2023-03-30T11:47:37 EDT" duration-ms="501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DynamicContent -->
+        <test-method signature="DynamicControls()[pri:8, instance:Runner.TestRunner@188ac8a3]" started-at="2023-03-30T11:47:37 EDT" name="DynamicControls" finished-at="2023-03-30T11:47:50 EDT" duration-ms="12502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DynamicControls -->
+        <test-method signature="DynamicLoading()[pri:9, instance:Runner.TestRunner@188ac8a3]" started-at="2023-03-30T11:47:50 EDT" name="DynamicLoading" finished-at="2023-03-30T11:47:55 EDT" duration-ms="5112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DynamicLoading -->
+        <test-method signature="FileDownload()[pri:10, instance:Runner.TestRunner@188ac8a3]" started-at="2023-03-30T11:47:55 EDT" name="FileDownload" finished-at="2023-03-30T11:47:56 EDT" duration-ms="1327" status="FAIL">
+          <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
+            <message>
+              <![CDATA[Unable to establish websocket connection to http://localhost:58392/devtools/browser/c7c3d560-f4c8-4e21-b30a-41f82223978e
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:58392/devtools/browser/c7c3d560-f4c8-4e21-b30a-41f82223978e
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:102)
+at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+at org.openqa.selenium.devtools.Connection.<init>(Connection.java:78)
+at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+at java.base/java.util.Optional.map(Optional.java:260)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:71)
+at Runner.TestRunner.FileDownload(TestRunner.java:228)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FileDownload -->
+        <test-method signature="FileUpload()[pri:11, instance:Runner.TestRunner@188ac8a3]" started-at="2023-03-30T11:47:56 EDT" name="FileUpload" finished-at="2023-03-30T11:47:57 EDT" duration-ms="409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FileUpload -->
+        <test-method signature="FloatingMenu()[pri:12, instance:Runner.TestRunner@188ac8a3]" started-at="2023-03-30T11:47:57 EDT" name="FloatingMenu" finished-at="2023-03-30T11:47:57 EDT" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FloatingMenu -->
+        <test-method signature="iframe()[pri:13, instance:Runner.TestRunner@188ac8a3]" started-at="2023-03-30T11:47:57 EDT" name="iframe" finished-at="2023-03-30T11:47:58 EDT" duration-ms="985" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iframe -->
+        <test-method signature="MouseHover()[pri:14, instance:Runner.TestRunner@188ac8a3]" started-at="2023-03-30T11:47:58 EDT" name="MouseHover" finished-at="2023-03-30T11:47:59 EDT" duration-ms="631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MouseHover -->
+        <test-method signature="JavaScriptAlert()[pri:15, instance:Runner.TestRunner@188ac8a3]" started-at="2023-03-30T11:47:59 EDT" name="JavaScriptAlert" finished-at="2023-03-30T11:47:59 EDT" duration-ms="256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JavaScriptAlert -->
+        <test-method signature="JavaScriptError()[pri:16, instance:Runner.TestRunner@188ac8a3]" started-at="2023-03-30T11:47:59 EDT" name="JavaScriptError" finished-at="2023-03-30T11:47:59 EDT" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JavaScriptError -->
+        <test-method signature="windowhandlefunc()[pri:17, instance:Runner.TestRunner@188ac8a3]" started-at="2023-03-30T11:47:59 EDT" name="windowhandlefunc" finished-at="2023-03-30T11:47:59 EDT" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- windowhandlefunc -->
+        <test-method signature="NotificationMessage()[pri:18, instance:Runner.TestRunner@188ac8a3]" started-at="2023-03-30T11:47:59 EDT" name="NotificationMessage" finished-at="2023-03-30T11:47:59 EDT" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NotificationMessage -->
+        <test-method is-config="true" signature="quitmethod()[pri:0, instance:Runner.TestRunner@188ac8a3]" started-at="2023-03-30T11:47:59 EDT" name="quitmethod" finished-at="2023-03-30T11:48:00 EDT" duration-ms="248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitmethod -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:Runner.TestRunner@188ac8a3]" started-at="2023-03-30T11:48:00 EDT" name="quitDriver" finished-at="2023-03-30T11:48:00 EDT" duration-ms="7" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Browsing context has been discarded
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [728b356e-d92a-4218-9f0e-12ee09eb4f24, close {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0, moz:accessibilityChecks: false, moz:buildID: 20230309232128, moz:debuggerAddress: 127.0.0.1:23826, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 28428, moz:profile: C:\Users\bsethur\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:23826/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 728b356e-d92a-4218-9f0e-12ee09eb4f24]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Browsing context has been discarded
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [728b356e-d92a-4218-9f0e-12ee09eb4f24, close {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0, moz:accessibilityChecks: false, moz:buildID: 20230309232128, moz:debuggerAddress: 127.0.0.1:23826, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 28428, moz:profile: C:\Users\bsethur\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:23826/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 728b356e-d92a-4218-9f0e-12ee09eb4f24
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:419)
+at Runner.TestRunner.quitDriver(TestRunner.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:344)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Runner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
